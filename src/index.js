@@ -3,6 +3,7 @@
  * @Email push.webstudio@gmail.com
  * @Author @afashio
  */
-import helloWorld from "./hello-world"
+import HelloWorldButton from "./components/hello-world-button/hello-world-button";
 
-helloWorld()
+const helloWorldButton = new HelloWorldButton();
+helloWorldButton.render();

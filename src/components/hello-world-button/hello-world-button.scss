@@ -1,0 +1,22 @@
+/*
+ * @Copyright (c) 2021
+ * @Email push.webstudio@gmail.com
+ * @Author @afashio
+ */
+$fontSize: 20px;
+$buttonBackgroundColor: green;
+$buttonFontColor: white;
+$textFontColor: red;
+
+.hello-world-button {
+  font-size: $fontSize;
+  padding: 7px 15px;
+  background: $buttonBackgroundColor;
+  color: $buttonFontColor;
+  outline: none;
+}
+
+.hello-world-text {
+  color: $textFontColor;
+  font-weight: bold;
+}
