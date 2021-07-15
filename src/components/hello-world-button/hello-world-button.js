@@ -7,14 +7,14 @@
 import './hello-world-button.scss'
 
 class HelloWorldButton {
-    get body() {
-        return document.querySelector('body');
-    }
+    body = document.querySelector('body');
+    buttonCssClass = 'hello-world-button';
+    textCssClass = 'hello-world-text';
 
     render() {
         const button = document.createElement('button');
         button.innerHTML = 'Hello World';
-        button.classList.add('hello-world-button');
+        button.classList.add(this.buttonCssClass);
         button.onclick = () => this.renderParagraph();
         this.body.appendChild(button);
     }
@@ -22,7 +22,7 @@ class HelloWorldButton {
     renderParagraph() {
         const p = document.createElement('p');
         p.innerHTML = 'Hello World';
-        p.classList.add('hello-world-text')
+        p.classList.add(this.textCssClass)
         this.body.appendChild(p);
     }
 }
