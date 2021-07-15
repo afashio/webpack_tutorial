@@ -3,5 +3,6 @@
  * @Email push.webstudio@gmail.com
  * @Author @afashio
  */
+import helloWorld from "./hello-world"
 
 helloWorld()
